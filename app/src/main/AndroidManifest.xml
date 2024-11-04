@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SubliPrint"
         tools:targetApi="31">
         <activity
+            android:name=".ColorsTemplatePDFActivity"
+            android:exported="false" />
+        <activity
             android:name=".GraphicEditingActivity"
             android:exported="false" />
         <activity
