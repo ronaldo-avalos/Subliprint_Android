@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.graphEditButton.setOnClickListener {
-            val intent = Intent(this,GraphicEditingActivity::class.java)
+            val intent = Intent(this,ColorsTemplatePDFActivity::class.java)
              this.startActivity(intent)
         }
     }
