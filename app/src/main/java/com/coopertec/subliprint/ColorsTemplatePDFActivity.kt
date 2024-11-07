@@ -12,12 +12,12 @@ import com.rajat.pdfviewer.PdfViewerActivity
 class ColorsTemplatePDFActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityColorsPlatillaPdfactivityBinding
-    private var download_file_url = "https://www.arkiplot.com/archivos/PATRONESCOLOR.pdf"
+    private var download_file_url = "http://www2.elo.utfsm.cl/~elo328/PDI13_Color.pdf"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityColorsPlatillaPdfactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-//
+////
 //        PdfViewerActivity.launchPdfFromUrl(
 //            context = this,
 //            pdfUrl = "your_pdf_url_here",

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SubliPrint</string>
+    <string name="print_home_name_menu">Print</string>
+    <string name="descubrir_name_menu">Descubrir</string>
+    <string name="favoritos_name_menu">Favoritos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
