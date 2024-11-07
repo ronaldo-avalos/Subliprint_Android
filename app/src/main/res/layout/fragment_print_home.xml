@@ -6,40 +6,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".PrintHomeFragment">
 
-    <!-- Cajas de colores en la parte superior -->
-    <LinearLayout
-        android:id="@+id/iaToolboxSection"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="horizontal"
-        android:paddingHorizontal="16dp">
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="160dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:background="#D0E8FF"
-            android:backgroundTintMode="src_in"
-            android:shape="rectangle" />
-
-        <View
-            android:layout_width="0dp"
-            android:layout_height="160dp"
-            android:layout_marginStart="8dp"
-            android:layout_weight="1"
-            android:background="#C4F1C5" />
-    </LinearLayout>
 
     <!-- Caja de herramientas (con íconos y etiquetas) -->
     <LinearLayout
         android:id="@+id/toolboxContainer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/iaToolboxSection"
         android:orientation="vertical"
         android:padding="16dp">
 
@@ -218,7 +190,5 @@
             </androidx.cardview.widget.CardView>
         </GridLayout>
     </LinearLayout>
-
-
 
 </RelativeLayout>
