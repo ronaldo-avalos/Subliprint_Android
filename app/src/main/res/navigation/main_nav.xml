@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/printHomeFragment"
-        android:name="com.coopertec.subliprint.PrintHomeFragment"
+        android:name="com.coopertec.subliprint.presentation.printHome.mainScreen.PrintHomeFragment"
         android:label="fragment_print_home"
         tools:layout="@layout/fragment_print_home" />
     <fragment
         android:id="@+id/exploreFragment"
-        android:name="com.coopertec.subliprint.ExploreFragment"
+        android:name="com.coopertec.subliprint.presentation.explore.ExploreFragment"
         android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.coopertec.subliprint.FavoritesFragment"
+        android:name="com.coopertec.subliprint.presentation.favorites.FavoritesFragment"
         android:label="fragment_favorites"
         tools:layout="@layout/fragment_favorites" />
 </navigation>

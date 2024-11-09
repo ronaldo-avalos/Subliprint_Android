@@ -1,13 +1,9 @@
-package com.coopertec.subliprint
+package com.coopertec.subliprint.presentation.printHome.toolsBox.colorsTemplate
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import com.coopertec.subliprint.databinding.ActivityColorsPlatillaPdfactivityBinding
-import com.rajat.pdfviewer.PdfViewerActivity
 
 class ColorsTemplatePDFActivity : AppCompatActivity() {
 

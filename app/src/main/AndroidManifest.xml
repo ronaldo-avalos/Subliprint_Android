@@ -21,10 +21,14 @@
         android:theme="@style/Theme.SubliPrint"
         tools:targetApi="31">
         <activity
-            android:name=".ColorsTemplatePDFActivity"
+            android:name=".presentation.printHome.toolsBox.tempsandtimeslist.TempsAndTimesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SubliPrint" />
+        <activity
+            android:name=".presentation.printHome.toolsBox.colorsTemplate.ColorsTemplatePDFActivity"
             android:exported="false" />
         <activity
-            android:name=".GraphicEditingActivity"
+            android:name=".presentation.printHome.iaTools.GraphicEditingActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
