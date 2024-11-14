@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentTempsTimesList2">
+    <fragment
+        android:id="@+id/fragmentTempsTimesList2"
+        android:name="com.coopertec.subliprint.presentation.printHome.toolsBox.tempsandtimeslist.FragmentTempsTimesList"
+        android:label="Lista"
+        tools:layout="@layout/fragment_temps_times_listist">
+        <action
+            android:id="@+id/action_fragmentTempsTimesList2_to_fragmentDetailTempsTimes"
+            app:destination="@id/fragmentDetailTempsTimes" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailTempsTimes"
+        android:name="com.coopertec.subliprint.presentation.printHome.toolsBox.tempsandtimeslist.FragmentDetailTempsTimes"
+        android:label="Detalle"
+        tools:layout="@layout/fragment_detail_temps_times">
+        <action
+            android:id="@+id/action_fragmentDetailTempsTimes_to_fragmentTempsTimesList2"
+            app:destination="@id/fragmentTempsTimesList2" />
+        <argument
+            android:name="productID"
+            app:argType="integer" />
+    </fragment>
+</navigation>
