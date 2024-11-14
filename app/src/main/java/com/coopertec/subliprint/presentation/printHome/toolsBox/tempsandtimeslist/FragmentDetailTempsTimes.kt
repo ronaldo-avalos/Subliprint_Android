@@ -6,8 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.navigation.fragment.navArgs
 import com.coopertec.subliprint.R
 import com.coopertec.subliprint.databinding.FragmentDetailTempsTimesBinding
+import kotlin.concurrent.fixedRateTimer
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -15,7 +17,7 @@ import com.coopertec.subliprint.databinding.FragmentDetailTempsTimesBinding
 class FragmentDetailTempsTimes : Fragment() {
 
     private var _binding: FragmentDetailTempsTimesBinding? = null
-
+    private val args: FragmentDetailTempsTimesArgs by navArgs()
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -24,7 +26,6 @@ class FragmentDetailTempsTimes : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentDetailTempsTimesBinding.inflate(inflater, container, false)
         return binding.root
 
@@ -32,10 +33,12 @@ class FragmentDetailTempsTimes : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+       val productID = args.productID
+        getProductById()
+    }
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_fragmentDetailTempsTimes_to_fragmentTempsTimesList2)
-        }
+    private fun getProductById() {
+
     }
 
     override fun onDestroyView() {

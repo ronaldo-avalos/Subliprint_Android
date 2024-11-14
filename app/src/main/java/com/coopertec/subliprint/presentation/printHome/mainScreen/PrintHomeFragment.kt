@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.coopertec.subliprint.presentation.printHome.iaTools.GraphicEditingActivity
 import com.coopertec.subliprint.databinding.FragmentPrintHomeBinding
+import com.coopertec.subliprint.presentation.printHome.toolsBox.colorsTemplate.ColorsTemplatePDFActivity
 import com.coopertec.subliprint.presentation.printHome.toolsBox.tempsandtimeslist.TempsAndTimesActivity
 
 class PrintHomeFragment : Fragment() {
@@ -25,13 +26,19 @@ class PrintHomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.generateImageButton.setOnClickListener {
-            val intent = Intent(requireContext(), GraphicEditingActivity::class.java)
-            requireActivity().startActivity(intent)
-        }
-        binding.tempsTimesListCard.setOnClickListener {
-            val intent = Intent(requireContext(), TempsAndTimesActivity::class.java)
-            requireActivity().startActivity(intent)
+        binding.apply {
+            generateImageButton.setOnClickListener {
+                val intent = Intent(requireContext(), GraphicEditingActivity::class.java)
+                requireActivity().startActivity(intent)
+            }
+            tempsTimesListCard.setOnClickListener {
+                val intent = Intent(requireContext(), TempsAndTimesActivity::class.java)
+                requireActivity().startActivity(intent)
+            }
+            colorsTemplateCard.setOnClickListener {
+                val intent = Intent(requireContext(), ColorsTemplatePDFActivity::class.java)
+                requireActivity().startActivity(intent)
+            }
         }
     }
 
