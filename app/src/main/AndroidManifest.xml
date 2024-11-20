@@ -21,6 +21,10 @@
         android:theme="@style/Theme.SubliPrint"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.printHome.toolsBox.guidesSublimation.GuidesActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SubliPrint" />
+        <activity
             android:name=".presentation.printHome.toolsBox.tempsandtimeslist.TempsAndTimesActivity"
             android:exported="false"
             android:theme="@style/Theme.SubliPrint" />

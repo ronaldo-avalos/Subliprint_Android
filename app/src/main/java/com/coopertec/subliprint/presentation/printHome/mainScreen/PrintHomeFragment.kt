@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import com.coopertec.subliprint.presentation.printHome.iaTools.GraphicEditingActivity
 import com.coopertec.subliprint.databinding.FragmentPrintHomeBinding
 import com.coopertec.subliprint.presentation.printHome.toolsBox.colorsTemplate.ColorsTemplatePDFActivity
+import com.coopertec.subliprint.presentation.printHome.toolsBox.guidesSublimation.GuidesActivity
 import com.coopertec.subliprint.presentation.printHome.toolsBox.tempsandtimeslist.TempsAndTimesActivity
 
 class PrintHomeFragment : Fragment() {
@@ -37,6 +38,10 @@ class PrintHomeFragment : Fragment() {
             }
             colorsTemplateCard.setOnClickListener {
                 val intent = Intent(requireContext(), ColorsTemplatePDFActivity::class.java)
+                requireActivity().startActivity(intent)
+            }
+            guidesCard.setOnClickListener {
+                val intent = Intent(requireContext(), GuidesActivity::class.java)
                 requireActivity().startActivity(intent)
             }
         }

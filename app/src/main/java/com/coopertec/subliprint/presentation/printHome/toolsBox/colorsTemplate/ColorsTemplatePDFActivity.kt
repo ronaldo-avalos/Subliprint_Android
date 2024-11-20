@@ -19,7 +19,6 @@ class ColorsTemplatePDFActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityColorsPlatillaPdfactivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        setSupportActionBar(binding.tapTemplateBar)
         binding.progressBar.visibility = View.VISIBLE
 
         // Cargar el archivo PDF de `assets` en segundo plano
@@ -39,7 +38,6 @@ class ColorsTemplatePDFActivity : AppCompatActivity() {
             }
         }
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
         binding.tapTemplateBar.setNavigationOnClickListener {
             finish()
         }

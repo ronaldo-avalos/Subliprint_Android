@@ -33,25 +33,6 @@
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tempItemText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Temperatura: 180°C"
-                android:textColor="@android:color/holo_red_dark" />
-
-            <TextView
-                android:id="@+id/timeItemText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tiempo: 120/60 seg" />
-
-            <TextView
-                android:id="@+id/pressureItemText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Presión: Moderada"
-                android:textColor="@android:color/holo_red_dark" />
         </LinearLayout>
     </LinearLayout>
 
